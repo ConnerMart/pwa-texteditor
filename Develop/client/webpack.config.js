@@ -22,7 +22,7 @@ module.exports = () => {
     },
     plugins: [
       new HtmlWebpackPlugin({
-        template: "./index.html",
+        template: "index.html",
         title: "Webpack Plugin",
       }),
       new WorkBoxPlugin.GenerateSW(),
