@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start:dev": "",
-    "start": "node server.js",
+    "start": "cd server && node server.js",
     "server": "",
     "build": "",
     "install": "",
