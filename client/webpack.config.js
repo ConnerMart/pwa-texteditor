@@ -4,7 +4,7 @@ const path = require("path");
 const { InjectManifest } = require("workbox-webpack-plugin");
 
 const WorkboxPlugin = require("workbox-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+// const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 // DONE: Add and configure workbox plugins for a service worker and manifest file.
 // DONE: Add CSS loaders and babel to webpack.
@@ -26,7 +26,7 @@ module.exports = () => {
         title: "Webpack Plugin",
       }),
       new WorkBoxPlugin.GenerateSW(),
-      new MiniCssExtractPlugin(),
+      // new MiniCssExtractPlugin(),
       new InjectManifest({
         swSrc: "./src-sw.js",
         swDest: "service-worker.js",
