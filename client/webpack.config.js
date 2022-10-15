@@ -45,7 +45,7 @@ module.exports = () => {
         template: "index.html",
         title: "Webpack Plugin",
       }),
-      new WorkBoxPlugin.GenerateSW(),
+      new WorkboxPlugin.GenerateSW(),
       new MiniCssExtractPlugin(),
       new InjectManifest({
         swSrc: "./src-sw.js",
