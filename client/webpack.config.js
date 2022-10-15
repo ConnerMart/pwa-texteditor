@@ -20,18 +20,6 @@ module.exports = () => {
       filename: "bundle.js",
       path: path.resolve(__dirname, "dist"),
     },
-    plugins: [
-      new HtmlWebpackPlugin({
-        template: "index.html",
-        title: "Webpack Plugin",
-      }),
-      new WorkBoxPlugin.GenerateSW(),
-      new MiniCssExtractPlugin(),
-      new InjectManifest({
-        swSrc: "./src-sw.js",
-        swDest: "service-worker.js",
-      }),
-    ],
 
     module: {
       rules: [
@@ -51,5 +39,18 @@ module.exports = () => {
         },
       ],
     },
+
+    plugins: [
+      new HtmlWebpackPlugin({
+        template: "index.html",
+        title: "Webpack Plugin",
+      }),
+      new WorkBoxPlugin.GenerateSW(),
+      new MiniCssExtractPlugin(),
+      new InjectManifest({
+        swSrc: "./src-sw.js",
+        swDest: "service-worker.js",
+      }),
+    ],
   };
 };
