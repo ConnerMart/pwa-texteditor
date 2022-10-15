@@ -28,10 +28,10 @@ module.exports = () => {
       }),
       new WorkboxPlugin.GenerateSW(),
       new MiniCssExtractPlugin(),
-      // new InjectManifest({
-      //   swSrc: "./src-sw.js",
-      //   swDest: "service-worker.js",
-      // }),
+      new InjectManifest({
+        swSrc: "./src-sw.js",
+        swDest: "[name].service-worker.js",
+      }),
     ],
 
     module: {
