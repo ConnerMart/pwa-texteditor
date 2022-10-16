@@ -81,7 +81,7 @@ define(['./workbox-8b6cdeda'], (function (workbox) { 'use strict';
    * See https://goo.gl/S9QRab
    */
   workbox.precacheAndRoute([{
-    "url": "InjectManifest.service-worker.js",
+    "url": "./src-sw.js",
     "revision": "ce8762d04c0b8d27fd62e97bbcfa9aac"
   }, {
     "url": "index.html",
@@ -91,7 +91,7 @@ define(['./workbox-8b6cdeda'], (function (workbox) { 'use strict';
     "revision": "b3044fccb1eeded6848a2b4846e97f55"
   }, {
     "url": "main.bundle.js",
-    "revision": "7fe819cf16d656798c6b7748bd5f0df0"
+    "revision": "2d7999e7fec4e4ed2c8bf8f8e4e994f4"
   }, {
     "url": "main.css",
     "revision": "08eb2b305b2190886053ec404379c79c"
